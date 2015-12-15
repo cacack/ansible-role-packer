@@ -1,5 +1,7 @@
 ---
-packer_pkg: packer_0.7.5_linux_amd64.zip
-packer_version_str: "Packer v0.7.5"
+packer_version: 0.8.6
+packer_version_string: "Packer v{{ packer_version }}"
+packer_package: "packer_{{ packer_version }}_linux_amd64.zip"
+packer_package_url: "https://releases.hashicorp.com/packer/{{ packer_version }}/{{ packer_package }}"
 packer_plugins: {}
 packer_plugins_force_install: false

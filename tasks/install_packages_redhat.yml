@@ -1,5 +1,6 @@
 ---
 - name: install packages on Red Hat based distributions
   yum: name={{ item }} state=present
+  sudo: yes
   with_items:
     - unzip
